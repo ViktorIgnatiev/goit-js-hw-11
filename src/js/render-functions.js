@@ -35,12 +35,5 @@ export function clearGallery() {
   gallery.innerHTML = '';
 }
 
-export function showLoader() {
-  const loaderContainer = document.querySelector('.loader-container');
-  loaderContainer.innerHTML = '<div class="loader"></div>';
-}
 
-export function hideLoader() {
-  const loaderContainer = document.querySelector('.loader-container');
-  loaderContainer.innerHTML = '';
-}
+
