@@ -35,5 +35,13 @@ export function clearGallery() {
   gallery.innerHTML = '';
 }
 
+export function showLoader() {
+  const loader = document.querySelector('.loader');
+  if (loader) loader.style.display = 'block';
+}
 
+export function hideLoader() {
+  const loader = document.querySelector('.loader');
+  if (loader) loader.style.display = 'none';
+}
 

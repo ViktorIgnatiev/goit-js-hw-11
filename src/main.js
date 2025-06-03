@@ -1,5 +1,6 @@
 import { getImagesByQuery } from './js/pixabay-api.js';
-import { createGallery, clearGallery } from './js/render-functions.js';
+import { createGallery, clearGallery, showLoader, hideLoader } from './js/render-functions.js';
+// import { showLoader, hideLoader } from './js/render-functions.js';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
@@ -8,13 +9,13 @@ const loader = document.querySelector('.loader'); // span.loader
 
 form.addEventListener('submit', handleSubmit);
 
-function showLoader() {
-  loader.style.display = 'block';
-}
+// function showLoader() {
+//   loader.style.display = 'block';
+// }
 
-function hideLoader() {
-  loader.style.display = 'none';
-}
+// function hideLoader() {
+//   loader.style.display = 'none';
+// }
 
 async function handleSubmit(event) {
   event.preventDefault();
